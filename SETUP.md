@@ -26,7 +26,7 @@ Before you begin, ensure you have the following installed:
 4. Generate an API key
 5. Copy the key for later use
 
-### OpenAI API Key (Required for LLM)
+### Gemini API Key (Required for LLM)
 1. Visit Google AI Studio
 2. Sign up or log in
 3. Navigate to the API Keys section
@@ -213,7 +213,7 @@ If you encounter issues:
 ## Architecture Overview
 
 ```
-User (Browser) → Frontend (Next.js) → Agent Backend (FastAPI + LangChain) → MCP Server → OpenWeatherMap API
+User (Browser) → Frontend (Next.js) → Agent Backend (FastAPI + Custome orchestration) → MCP Server → GooglePagespeed API
 ```
 
 - **Frontend**: React-based UI for user interaction
