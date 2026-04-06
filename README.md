@@ -3,7 +3,7 @@
 A full-stack agent-driven application that demonstrates end-to-end development with **100% FREE APIs**:
 - Google PageSpeed Insights API for performance analysis
 - UptimeRobot API for website monitoring  
-- Groq API for free LLM capabilities
+- Gemini API for free LLM capabilities
 - Modern React frontend for marketing insights
 
 ## 🎯 Why This Matters
