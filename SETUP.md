@@ -1,11 +1,11 @@
-# Weather Agent Application - Setup Guide
+# Marketing Agent Application - Setup Guide
 
 ## Overview
 
-This is a full-stack agent-driven weather application that demonstrates end-to-end development with modern technologies. The application consists of three main components:
+This is a full-stack agent-driven Marketing application that demonstrates end-to-end development with modern technologies. The application consists of three main components:
 
-1. **MCP Server** - A wrapper service for OpenWeatherMap API
-2. **Agent Backend** - LLM-powered backend using LangChain
+1. **MCP Server** - A wrapper service for GooglePagespeed API
+2. **Agent Backend** - LLM-powered backend using customized orchestration
 3. **Frontend** - Modern React web application
 
 ## Prerequisites
@@ -19,17 +19,17 @@ Before you begin, ensure you have the following installed:
 
 ## Step 1: Get API Keys
 
-### OpenWeatherMap API Key (Required)
-1. Visit [OpenWeatherMap](https://openweathermap.org/api)
+### Googlepagespeed API Key (Required)
+1. Visit GooglePageSpeed
 2. Sign up for a free account
 3. Navigate to your account dashboard
 4. Generate an API key
 5. Copy the key for later use
 
 ### OpenAI API Key (Required for LLM)
-1. Visit [OpenAI Platform](https://platform.openai.com/)
+1. Visit Google AI Studio
 2. Sign up or log in
-3. Navigate to API Keys section
+3. Navigate to the API Keys section
 4. Create a new API key
 5. Copy the key for later use
 
@@ -38,7 +38,7 @@ Before you begin, ensure you have the following installed:
 ### Clone and Navigate
 ```bash
 # Navigate to the project directory
-cd weather-agent-app
+cd Marketing-Agent-App
 ```
 
 ### Setup MCP Server
@@ -52,7 +52,7 @@ npm install
 cp .env.example .env
 
 # Edit .env file and add your OpenWeatherMap API key
-# OPENWEATHER_API_KEY=your_actual_api_key_here
+# GooglePagespeed_API_KEY=your_actual_api_key_here
 ```
 
 ### Setup Agent Backend
@@ -68,7 +68,7 @@ copy .env.example .env  # On Windows
 cp .env.example .env   # On Mac/Linux
 
 # Edit .env file and add your API keys
-# OPENAI_API_KEY=your_actual_openai_key_here
+# Gemini_API_KEY=your_actual_openai_key_here
 # MCP_SERVER_HOST=localhost
 # MCP_SERVER_PORT=3001
 # BACKEND_HOST=localhost
@@ -89,21 +89,21 @@ The application requires all three services to be running simultaneously. Open *
 
 ### Terminal 1: Start MCP Server
 ```bash
-cd weather-agent-app/mcp-server
+cd Marketing-Agent-App/mcp-server
 npm run dev
 ```
-You should see: `Weather MCP Server connected and ready!`
+You should see: `MCP Server connected and ready!`
 
 ### Terminal 2: Start Agent Backend
 ```bash
-cd weather-agent-app/agent-backend
+cd Marketing-Agent-App/agent-backend
 python app.py
 ```
 You should see the FastAPI server starting on port 8000
 
 ### Terminal 3: Start Frontend
 ```bash
-cd weather-agent-app/frontend
+cd Marketing-Agent-App/frontend
 npm run dev
 ```
 The frontend will be available at http://localhost:3000
@@ -113,7 +113,7 @@ The frontend will be available at http://localhost:3000
 1. Open your web browser
 2. Navigate to http://localhost:3000
 3. You should see the Weather Agent interface
-4. Try asking: "What's the weather like in New York?"
+4. Try asking: "Analyze the performance of https://www.nike.com?"
 
 ## Troubleshooting
 
